@@ -24,6 +24,6 @@ public class HomeLoan extends Loan {
     }
 
     public void applyInsurance(double coverageAmount) {
-        System.out.println("Applying Home Loan insurance with coverage: " + coverageAmount);
+        System.out.println("Applying home insurance with coverage: " + coverageAmount);
     }
 }

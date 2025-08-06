@@ -10,7 +10,7 @@ public abstract class Loan {
     public Loan(int loanId, String customerName, double loanAmount) {
         this.loanId = loanId;
         this.customerName = customerName;
-        this.loanAmount = loanAmount;
+        this.loanAmount=loanAmount;
     }
 
     public abstract double calculateEMI();
@@ -22,7 +22,7 @@ public abstract class Loan {
 
     @Override
     public String toString() {
-        return "Loan ID: " + loanId + " | Customer: " + customerName + " | Loan Amount: " + loanAmount;
+        return "Loan ID: " + loanId + " | Customer: " + customerName + "| Type: " + this.getClass().getSimpleName() + " | EMI: " + calculateEMI() + " | Loan Amount: " + loanAmount;
     }
 
     public int getLoanId() {
